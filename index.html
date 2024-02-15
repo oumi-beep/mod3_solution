@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap Layout</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    /* Custom styles for the dropdown menu */
+    .dropdown-menu.full-width {
+      width: 100%;
+      background-color: #f8f9fa; /* Change the background color as needed */
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand visible-xs" href="#">Food, LLC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav">
+        <!-- Desktop and Tablet view: Navbar contains only brand name -->
+        <li class="hidden-xs"><a href="#">Food, LLC</a></li>
+      </ul>
+      <!-- Mobile view: Dropdown menu -->
+      <ul class="nav navbar-nav navbar-right visible-xs">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </a>
+          <ul class="dropdown-menu full-width">
+            <li><a href="#">Chicken</a></li>
+            <li><a href="#">Beef</a></li>
+            <li><a href="#">Sushi</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Heading -->
+<div class="container text-center">
+  <h1 class="page-header">Our Menu</h1>
+</div>
+
+<!-- Tall Section -->
+<section class="tall-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Add content here -->
+        <!-- For demonstration purposes, adding some placeholder text -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <!-- Adding more content to make the section tall -->
+        <!-- Repeat the above paragraph as needed -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
